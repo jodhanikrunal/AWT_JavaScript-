@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arithmetic Operations</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="num1" placeholder="Enter a number">
+  <br>
+  <br>
+  <input type="text" id="num2" placeholder="Enter a number">
+  <br>
+  <br>
+  <button onclick="performOperation('+')">Add</button>
+  <button onclick="performOperation('-')">Subtract</button>
+  <button onclick="performOperation('*')">Multiply</button>
+  <button onclick="performOperation('/')">Divide</button>
+  <br>
+  <label id="msg"></label>
+
+  <script>
+    function performOperation(operator) {
+      var num1 = parseFloat(document.getElementById('num1').value);
+      var num2 = parseFloat(document.getElementById('num2').value);
+      var resultLabel = document.getElementById('msg');
+      var validationResult = validateInputs(num1, num2);
+
+      if (validationResult.isValid) {
+        var result;
+
+        switch (operator) {
+          case '+':
+            result = num1 + num2;
+            break;
+          case '-':
+            result = num1 - num2;
+            break;
+          case '*':
+            result = num1 * num2;
+            break;
+          case '/':
+            result = num1 / num2;
+            break;
+        }
+
+        resultLabel.textContent = 'Result: ' + result;
+        resultLabel.classList.remove('error');
+      } else {
+        resultLabel.textContent = validationResult.errorMessage;
+        resultLabel.classList.add('error');
+      }
+    }
+
+    function validateInputs(num1, num2) {
+      if (isNaN(num1) || isNaN(num2)) {
+        return {
+          isValid: false,
+          errorMessage: 'Please enter valid numbers.'
+        };
+      }
+
+      return {
+        isValid: true,
+        errorMessage: ''
+      };
+    }
+  </script>
+</body>
+</html>
