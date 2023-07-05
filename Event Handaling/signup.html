@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="signup" method="post" action="login.html">
+        <div>
+            <label >Full Name :
+            <input id="fname" type="text" />
+            <span id="fnameErr" class="error-message"></span>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label >User Name : 
+            <input id="Uname" type="text" />
+            <span id="UnameErr" class="error-message"></span>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label >Password : 
+            <input id="Password" type="password" />
+            <span id="passwordErr" class="error-message"></span>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label >Confirm Password :
+            <input id="Confirm_Password" type="password" />
+            <span id="confirmpasswordErr" class="error-message"></span>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+            Gender : 
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+      
+            <input type="radio" id="dewey" name="gender" value="Female">
+            <label for="Female">Female</label>
+         
+            <input type="radio" id="louie" name="gender" value="other">
+            <label for="Other">Other</label>
+
+            <span id="genderErr" class="error-message"></span>
+            </label>>
+          </div>
+        <br>
+        <div>
+            <label >Phone No : 
+            <input id="Ph_no" type="tel" pattern="[0-9]{10}" required/>
+            <span id="Ph_noErr" class="error-message"></span>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label >Email : 
+            <input id="Email" type="text"/>
+            <span id="EmailErr" class="error-message"></span>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="State">Select State : 
+            <select id="State" name="State">
+                <option value="">Select State</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharahstra">Maharahstra</option>
+                <option value="Rajsthan">Rajsthan</option>
+            </select>
+            <span id="StateErr" class="error-message"></span>
+            </label>
+        </div>
+        <br>
+        <label for="agreement"></label>
+        <input type="checkbox" id="agreement"> I agree to the terms and conditions.
+            <span id="agreementError" class="error-message"></span>
+        </label>
+        <br>
+        <br>
+        <div>
+            <input id="submit" type="submit" />
+        </div>
+
+    </form>
+</body>
+</html>
