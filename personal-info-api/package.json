@@ -1,14 +1,17 @@
 {
-  "name": "awt",
+  "name": "personal-info-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "krunal",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
     "mongoose": "^7.5.1",
     "nodemon": "^3.0.1"
   }
