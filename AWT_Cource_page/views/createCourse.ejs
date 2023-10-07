@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course</title>
+</head>
+<body>
+    <h1>Create Course</h1>
+    <form action="/course/create" method="POST">
+        <div>
+            <label for="universityName">University Name:</label>
+            <input type="text" id="universityName" name="universityName" required>
+        </div>
+        <div>
+            <label for="instituteName">Institute Name:</label>
+            <input type="text" id="instituteName" name="instituteName" required>
+        </div>
+        <div>
+            <label for="departmentName">Department Name:</label>
+            <input type="text" id="departmentName" name="departmentName" required>
+        </div>
+        <div>
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName" name="courseName" required>
+        </div>
+        <div>
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" name="courseCode" required>
+        </div>
+        <div>
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" required>
+        </div>
+        <button type="submit">Create Course</button>
+    </form>
+</body>
+</html>

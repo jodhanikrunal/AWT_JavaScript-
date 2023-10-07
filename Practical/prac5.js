@@ -4,6 +4,8 @@
 // Create child classes like Car and Motorcycle that inherit from the Vehicle class
 // and add specific properties and methods.
 
+// github link - https://github.com/jodhanikrunal/AWT_JavaScript-/tree/main/Practical
+
 class Vehicle {
     constructor(company, model, year) {
         this.company = company;

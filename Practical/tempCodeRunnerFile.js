@@ -1,7 +1,3 @@
-// Create an iterator that generates an infinite sequence of numbers and a generator
-// that yields a sequence of even numbers. Use the iterator and generator in
-// different scenarios.
-
 // github link - https://github.com/jodhanikrunal/AWT_JavaScript-/tree/main/Practical
 
 // Iterator
